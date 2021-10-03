@@ -1,0 +1,24 @@
+{
+    "manifest_version":2,
+    "name":"Background Modify",
+    "description":"Add a custom background to google.com",
+    "version":"1.0",
+    "icons":{
+        "16":"/images/icecream16.png",
+        "48":"/images/icecream48.png",
+        "128":"/images/icecream128.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16":"/images/icecream16-2.png",
+            "48":"/images/icecream48-2.png",
+            "128":"/images/icecream128-2.png"
+        }
+    },
+"content_scripts":[
+    {
+    "matches":["https://www.google.com/*"],
+    "css":["main.css"]
+}
+]
+}
